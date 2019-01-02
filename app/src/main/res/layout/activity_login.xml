@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.affereaflaw.tayo.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:srcCompat="@drawable/tulisantayo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DRIVER"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0c5baf"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/usernamelogo" />
+
+        <EditText
+            android:id="@+id/txtUsername_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="40dp"
+            android:hint="Email"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0c5baf"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/passwordlogo" />
+
+        <EditText
+            android:id="@+id/txtPassword_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:textColorHint="@android:color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_Masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="8pt"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="#0d3c6e"
+        android:enabled="true"
+        android:text="Masuk" />
+
+    <TextView
+        android:id="@+id/txtLupapassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:text="Lupa password?"
+        android:clickable="true"
+        android:textColor="#ffe100"
+        android:textAlignment="textEnd" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:background="#0c5baf"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Belum punya akun?"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtDaftar"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:text="Daftar"
+            android:textAlignment="center"
+            android:textColor="#f8db06" />
+
+    </LinearLayout>
+
+</LinearLayout>

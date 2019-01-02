@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainMenu"
+    tools:showIn="@layout/app_bar_main_menu"
+    android:orientation="vertical"
+    android:background="#0c5baf">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0c5baf"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0c5baf"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="10dp"
+                android:layout_marginLeft="-60dp"
+                android:background="#0c5baf"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:maxHeight="30dp"
+                android:layout_weight="0.7"
+                app:srcCompat="@drawable/navbar" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="12dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tulisantayo" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtBerita"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="11sp"
+                android:textColor="#0c5baf"
+                android:text="Memuat berita..." />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#0c5baf">
+
+                    <ImageButton
+                        android:id="@+id/panduan"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/panduanjalur"
+                        android:layout_marginTop="50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Start Driving"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+                </LinearLayout>
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/info"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/news"
+                        android:layout_marginTop="50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="News"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+                </LinearLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#0c5baf">
+
+                    <ImageButton
+                        android:id="@+id/jadwal"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/jadwalbus"
+                        android:layout_marginTop="50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jadwal Bus"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#0c5baf">
+
+                    <ImageButton
+                        android:id="@+id/rute"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/tayologo"
+                        android:layout_marginTop="50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rute Bus"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0c5baf"
+    tools:context="com.example.affereaflaw.tayo.HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Profil"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="136dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/username" />
+
+    <TextView
+        android:id="@+id/profilNama"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/profilTtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textColor="#e7e7e7"
+        android:text="Ttl" />
+
+    <TextView
+        android:id="@+id/profilGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textColor="#e7e7e7"
+        android:text="Gender" />
+
+
+    <TextView
+        android:id="@+id/profilUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textColor="#e7e7e7"
+        android:text="Fauzi123" />
+
+
+    <TextView
+        android:id="@+id/profilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textColor="#e7e7e7"
+        android:text="email" />
+
+    <TextView
+        android:id="@+id/profilTumpang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textColor="#e7e7e7"
+        android:text="Tumpang" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Save"
+        android:background="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Logout"
+        android:background="@color/colorPrimaryDark"/>
+</LinearLayout>
